@@ -1,5 +1,5 @@
-import base64
-import re
+from HTTP_Client.utilities.docs import status_code
+import base64, re
 
 
 def api_params_reformat(link: str, parameters: dict):
@@ -44,3 +44,16 @@ def encode_excel_base_x64(filepath):
     data = __manipulate_files(filepath, "rb")
     encoded_data = base64.b64encode(data).decode(encoding="utf-8")
     return encoded_data
+
+
+def check_status(state: int):
+    if 200 <= state < 227:
+        return status_code["2xx"][state]
+    elif 300 <= state < 309:
+        return status_code["3xx"][state]
+    elif 400 <= state < 452:
+        return status_code["4xx"][state]
+    elif 500 <= state:
+        return status_code["5xx"][state]
+    else:
+        return state
