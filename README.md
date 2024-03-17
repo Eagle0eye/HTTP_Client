@@ -1,5 +1,3 @@
-Certainly! Below is the modified README with added descriptions about the Builder Pattern and Object-Oriented approach:
-
 ---
 
 # HTTP Client Request Builder
