@@ -58,7 +58,7 @@ This module depends on the following Python packages:
 Special thanks to [Hossam Hamdy](https://github.com/0xGhazy) for their support and contribution to this project.
 
 ## License
-This project is licensed under the [license name]. See the LICENSE file for details.
+This project is licensed under the __Joe-0xRoot__. See the LICENSE file for details.
 
 ---
 
